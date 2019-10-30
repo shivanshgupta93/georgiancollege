@@ -4,6 +4,8 @@ Create two tables one that contains the names and IDs of your group members and 
 Create a one to many relationship between the two tables that show which students are in each course
 """
 
+##We have created a database Data_Programming in SQL server and connecting to that
+
 import pyodbc
 
 con = pyodbc.connect("Driver={SQL Server Native Client 11.0};" "Server=localhost;" "Database=Data_Programming;" "Trusted_Connection=yes;")
