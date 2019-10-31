@@ -4,7 +4,7 @@ Create two tables one that contains the names and IDs of your group members and 
 Create a one to many relationship between the two tables that show which students are in each course
 """
 
-##We have created a database Data_Programming in SQL server and connecting to that
+## Created a database Data_Programming in Microsoft SQL Server and directly connecting to the database
 
 import pyodbc
 
@@ -73,4 +73,5 @@ select_qry = "SELECT S.STUDENTID, S.STUDENTNAME, C.COURSEID, C.COURSENAME FROM S
 cur.execute(select_qry)
 select_rs = cur.fetchall()
 
-print(select_rs)
+for row in select_rs:
+    print("StudentId: %s, StudentName: %s, CourseId: %s, CourseName: %s\n" %(row[0], row[1], row[2], row[3]))
