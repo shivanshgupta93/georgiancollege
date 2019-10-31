@@ -79,11 +79,11 @@ if __name__ == '__main__':
             deckobj.card_shuffle()
             deal_count = 0
             
-        if user_input.upper() == "DEAL" or int(user_input) == 1:
+        if user_input.upper() == "DEAL":
             deckobj.deal()   
             deal_count += 1
             
-        if user_input.upper() == "SHUFFLE" or int(user_input) == 2:
+        if user_input.upper() == "SHUFFLE":
             deckobj.card_shuffle()
             deal_count = 0
                 
